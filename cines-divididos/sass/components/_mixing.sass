@@ -1,0 +1,25 @@
+
+
+@mixin flex($direccion, $justificacion, $alineacion, $gap)
+  display: flex
+  flex-direction: $direccion
+  justify-content: $justificacion
+  align-items: $alineacion
+  gap: $gap
+
+  @if $justificacion == null
+  @if $gap == null
+  @if $alineacion == null
+  
+@mixin grid($columnas,$margen, $gap)
+  display: grid
+  grid-template-columns: $columnas
+  gap: $gap
+  margin: $margen
+
+
+     
+@mixin medidas($ancho,$h)
+  width: $ancho
+  height: $h
+  
