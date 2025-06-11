@@ -20,38 +20,57 @@ main {
 }
 
 nav {
-  position: sticky;
-  top: 0%;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0%;
   height: 80px;
   padding: 10px 20px;
   z-index: 100;
-  background: linear-gradient(to bottom, #971F4E, #670F59);
+  background-color: #FFFFFF;
   border-bottom: 3px solid #692854;
 }
 nav .logo {
   width: 220px;
   height: 32px;
 }
-nav div {
+nav .botones_nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+nav .botones_nav button {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 5px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: #FFFFFF;
 }
-nav div img {
-  width: 80px;
+nav .botones_nav button img {
+  height: 50%;
 }
-nav div p {
-  margin-top: -15px;
-  color: black;
+nav button {
+  border: none;
+  background-color: #FFFFFF;
+  width: 70px;
+  height: 70px;
+}
+nav button .clubicon {
+  width: 100%;
 }
 nav .ralla {
   width: 40px;
 }
 
 .diviciones {
+  background: linear-gradient(to bottom, #971F4E, #670F59);
   padding: 30px;
 }
 
@@ -78,10 +97,10 @@ section img:hover {
 .menus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-content: center;
   gap: 20px;
-  padding: auto;
   margin: 60px 15px 30px;
+  place-content: center;
+  padding: auto;
 }
 .menus button {
   background-color: white;
@@ -120,8 +139,8 @@ article::before {
   content: "";
   position: absolute;
   bottom: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   pacity: 0;
   transition: all 0.3s ease;
 }
@@ -189,12 +208,14 @@ footer p {
 }
 footer .playstore {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 70px;
 }
 footer .iconos {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 70px;
