@@ -1,15 +1,25 @@
-@mixin degrade()
-  background: linear-gradient(45deg,#82366B,#692854)
 
 
+@mixin flex($direccion, $justificacion, $alineacion, $gap)
+  display: flex
+  flex-direction: $direccion
+  justify-content: $justificacion
+  align-items: $alineacion
+  gap: $gap
 
-  .carrusel
-  width: 100%
-  overflow-x: auto
-  white-space: nowrap
-  img
-    width: auto
-    height: 200px
-    background-size: cover
-    display: inline-block 
+  @if $justificacion == null
+  @if $gap == null
+  @if $alineacion == null
+  
+@mixin grid($columnas,$margen, $gap)
+  display: grid
+  grid-template-columns: $columnas
+  gap: $gap
+  margin: $margen
+
+
+     
+@mixin medidas($ancho,$h)
+  width: $ancho
+  height: $h
   
