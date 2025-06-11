@@ -1,0 +1,183 @@
+*
+  padding: 0
+  margin: 0
+
+::-webkit-scrollbar
+  width: 8px
+
+::-webkit-scrollbar-thumb
+  background-color: #692854
+  border-radius: 5px
+
+  
+
+
+main
+  background-color: #FFFFFF
+  font-family: "futura","montserrat",sans-serif
+  font-weight: bold
+  letter-spacing: 1px
+
+nav
+  position: sticky
+  top: 0%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 80px
+  padding: 10px 20px
+  z-index: 100
+  background: linear-gradient(to bottom,#971F4E,#670F59)
+  border-bottom: 3px solid #692854
+  .logo
+    width: 220px
+    height: 32px
+  div
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+     width: 80px
+    p
+      margin-top: -15px
+      color: black
+  .ralla
+    width: 40px
+.diviciones
+  padding: 30px
+
+section
+  display: flex
+  width: auto
+  height: auto
+  img
+    width: 0px
+    flex-grow: 1
+    object-fit: cover
+    opacity: .8
+    transition: 1s ease
+    &:hover
+      cursor: crosshair
+      width: 170px
+      opacity: 1
+      filter: contrast(120%)
+
+.menus
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  place-content: center
+  gap: 20px
+  padding: auto
+  margin: 60px 15px 30px
+  button
+    background-color: white
+    color: #919DAF
+    font-size: 18px
+    font-family: "futura","montserrat",sans-serif
+    font-weight: bold
+    letter-spacing: 1px
+    min-width: 220px
+    max-width: 288
+    min-height: 80px
+    max-height: 160px
+    border-radius: 5px
+    border: none
+    box-shadow: 0px 1px 5px  rgba(0, 0, 0, 0.3)
+    transition: .3s ease
+    &:hover
+      background-color: #692854
+      transform: scale(1.07)
+
+
+
+
+article
+  position: relative
+  width: auto
+  transition: all .3s ease
+  &:hover
+    transform: perspective(250px) rotatex(10deg) translateY(-5%)translatex(0) 
+    .img-drgn
+      opacity: 1
+      transform: translateY(-45%)
+  &::before
+    content: ""
+    position: absolute
+    bottom: 0
+    height: 100%
+    width: 100%
+    pacity:0
+    transition: all .3s ease
+  &:hover::before
+    background-image: linear-gradient(to bottom,transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0)95%)
+  .img-fondo
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5)
+    border-radius: 4px
+    object-fit: cover
+    width: 100%
+  .img-drgn
+    position: absolute
+    width: auto
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    transform: translateY(25%)
+    transition: .3s ease
+    opacity: 0
+
+
+.carrusel
+  width: 100%
+  overflow-x: auto
+  white-space: nowrap
+  padding: 15px 0
+  img
+    width: auto
+    height: 200px
+    object-fit: cover
+    display: inline-block
+    margin-right: 10px
+    border-radius: 8px
+    &:hover
+      transform: scale(1.10)
+
+footer
+  background: linear-gradient(to bottom,#971F4E,#670F59)
+  font-size: 20px
+
+  .options
+    display: grid
+    grid-template-columns: 1fr
+    margin: 0px 20px 30px
+    button
+      text-align: left
+      border: none
+      background: none
+      color: white
+      padding: 10px
+      font-size: 20px
+  p
+    color: white
+    justify-content: center
+  .playstore
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 70px
+  .iconos
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 70px 
+    margin-top: 20px
+
+ 
+  
+ 
+
+
+ 
+
+
+
