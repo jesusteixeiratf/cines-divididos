@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  section {
+    min-height: 400px;
+    max-height: 450px;
+    max-width: 900px;
+  }
+  article .img-drgn {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  section {
+    max-width: 600;
+  }
+  article .img-drgn {
+    width: 500px;
+  }
+  .menus {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer .options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=responsive.css.map */
